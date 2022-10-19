@@ -18,6 +18,8 @@ package org.projecthusky.fhir.emed.ch.common.util;
 public class FhirSystem {
 
     public static final String LOINC = "http://loinc.org";
+    public static final String SNOMEDCT = "http://snomed.info/sct";
+    public static final String UCUM = "";
     public static final String URI = "urn:ietf:rfc:3986";
 
     /**
