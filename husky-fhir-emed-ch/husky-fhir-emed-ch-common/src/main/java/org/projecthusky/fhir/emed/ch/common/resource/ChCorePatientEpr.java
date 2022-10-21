@@ -13,7 +13,7 @@ package org.projecthusky.fhir.emed.ch.common.resource;
 import org.hl7.fhir.r4.model.Patient;
 
 /**
- * husky
+ * The HAPI custom structure for CH-CORE PatientEPR.
  *
  * @author Quentin Ligier
  **/
