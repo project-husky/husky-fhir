@@ -19,5 +19,5 @@ import org.hl7.fhir.r4.model.Address;
  **/
 public class ChCoreAddress extends Address {
 
-    // TODO
+    // TODO add support for extensions
 }
