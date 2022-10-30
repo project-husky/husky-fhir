@@ -19,4 +19,13 @@ import org.hl7.fhir.r4.model.Patient;
  **/
 public class ChCorePatientEpr extends Patient {
     // TODO add support for extensions
+
+    /**
+     * Empty constructor for the parser.
+     */
+    public ChCorePatientEpr() {
+        super();
+    }
+
+    // TODO resolveGender, setGender with
 }
