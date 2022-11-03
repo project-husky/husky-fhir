@@ -4,6 +4,7 @@ package org.projecthusky.fhir.emed.ch.common.enums;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
+import org.projecthusky.common.enums.CodeSystems;
 import org.projecthusky.common.enums.LanguageCode;
 import org.projecthusky.common.enums.ValueSetEnumInterface;
 
@@ -43,24 +44,62 @@ public enum ReligiousAffiliation implements ValueSetEnumInterface {
         this.displayNames[4] = Objects.requireNonNull(displayNameIt);
     }
 
+    /**
+     * Gets the code system identifier.
+     *
+     * @return the code system identifier.
+     */
     @Override
-    public @NonNull String getDisplayName(@Nullable LanguageCode languageCode) {
-        return null;
+    @NonNull
+    public String getCodeSystemId() {
+        return this.codeSystem;
     }
 
+    /**
+     * Gets the code system name.
+     *
+     * @return the code system name.
+     */
     @Override
-    public @NonNull String getCodeSystemId() {
-        return null;
+    @NonNull
+    public String getCodeSystemName() {
+        final var codeSystem = CodeSystems.getEnum(this.codeSystem);
+        if (codeSystem != null) {
+            return codeSystem.getCodeSystemName();
+        }
+        return "";
     }
 
+    /**
+     * Gets the code value as a string.
+     *
+     * @return the code value.
+     */
     @Override
-    public @NonNull String getCodeSystemName() {
-        return null;
+    @NonNull
+    public String getCodeValue() {
+        return this.code;
     }
 
+    /**
+     * Gets the display name defined by the language param.
+     *
+     * @param languageCode The language code to get the display name for, {@code null} to get the default display name.
+     * @return the display name in the desired language.
+     */
     @Override
-    public @NonNull String getCodeValue() {
-        return null;
+    @NonNull
+    public String getDisplayName(@Nullable final LanguageCode languageCode) {
+        if (languageCode == null) {
+            return this.displayNames[0];
+        }
+        return switch (languageCode) {
+            case ENGLISH -> this.displayNames[1];
+            case GERMAN -> this.displayNames[2];
+            case FRENCH -> this.displayNames[3];
+            case ITALIAN -> this.displayNames[4];
+            default -> "TOTRANSLATE";
+        };
     }
 
     @Override
