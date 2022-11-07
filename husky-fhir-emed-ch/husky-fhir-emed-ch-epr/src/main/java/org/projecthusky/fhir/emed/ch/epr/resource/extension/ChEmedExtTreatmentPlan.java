@@ -17,7 +17,7 @@ import java.util.UUID;
  *
  * @author Ronaldo Loureiro
  */
-public class ChEmedExtTreatmentPlan extends Extension {
+public class ChEmedExtTreatmentPlan extends Extension implements ChEmedExtReference {
 
     /**
      * ID of the Medication Treatment Plan document.
@@ -113,7 +113,7 @@ public class ChEmedExtTreatmentPlan extends Extension {
      * @return {@code true} if the ID of the Medication Treatment Plan document exists, {@code false} otherwise.
      */
     public boolean hasId() {
-        return this.id != null && !this.id.isEmpty();
+        return this.identifier != null && !this.identifier.isEmpty();
     }
 
     /**
