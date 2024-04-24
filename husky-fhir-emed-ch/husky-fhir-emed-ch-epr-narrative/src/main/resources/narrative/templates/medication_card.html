@@ -14,12 +14,12 @@
         <tr>
             <td class="cell-patient">
                 <h2>Patient</h2>
-                <th:block th:include="~{patient :: display-name-address-contact(${resource.resolvePatient()}, ${lang})}"/>
+                <th:block th:insert="~{patient :: display-name-address-contact(${resource.resolvePatient()}, ${lang})}"/>
             </td>
             <th:block th:if="${lastStatement != null}">
                 <td class="cell-author">
                     <h2>Dernière modification</h2>
-                    <th:block th:include="~{last_modif :: display-last-modification(${lastStatement}, ${lang})}"/>
+                    <th:block th:insert="~{last_modif :: display-last-modification(${lastStatement}, ${lang})}"/>
                 </td>
             </th:block>
         </tr>
