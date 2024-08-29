@@ -7,14 +7,14 @@ import lombok.Getter;
  * Called {@code MedicationAuthor} in ChMed23A specifications.
  */
 @Getter
-public enum EMediplanAuthor implements EMediplanEnum {
-    HEALTHCARE_PERSON("1"),
-    PATIENT("2");
+public enum EMediplanAuthor implements EMediplanEnum<Integer> {
+    HEALTHCARE_PERSON(1),
+    PATIENT(2);
 
     @JsonValue
-    private final String code;
+    private final Integer code;
 
-    EMediplanAuthor(String code) {
+    EMediplanAuthor(int code) {
         this.code = code;
     }
 }
