@@ -21,6 +21,8 @@ import ca.uhn.fhir.model.api.annotation.ResourceDef;
 public class ChCoreCompositionEpr extends ChCoreComposition {
 
 	
+	private static final long serialVersionUID = 6290265510559327928L;
+
 	public ChCoreCompositionEpr() {
 		super();
 		setLanguage("de-CH");
