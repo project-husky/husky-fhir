@@ -44,7 +44,6 @@
 		<tag>HEAD</tag>
 	</scm>
 	<modules>
-		<module>husky-fhir-structures</module>
 		<module>husky-fhir-communication</module>
 		<module>husky-fhir-emed-ch</module>
 		<module>husky-fhir-vacd</module>
