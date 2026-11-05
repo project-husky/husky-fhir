@@ -4,12 +4,7 @@
 	<artifactId>husky-fhir</artifactId>
 	<name>Husky FHIR</name>
 	<packaging>pom</packaging>
-
-	<parent>
-		<groupId>org.projecthusky</groupId>
-		<artifactId>husky-api</artifactId>
-		<version>3.5.1-SNAPSHOT</version>
-	</parent>
+	<version>3.5.1-SNAPSHOT</version>
 
 	<modules>
 		<module>husky-fhir-structures</module>
