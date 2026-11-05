@@ -1,0 +1,14 @@
+.project
+.settings
+.classpath
+target
+bin
+work
+.DS_Store
+.sts4-cache
+log
+/log/
+**/log/*
+.idea/
+*.iml
+.factorypath
