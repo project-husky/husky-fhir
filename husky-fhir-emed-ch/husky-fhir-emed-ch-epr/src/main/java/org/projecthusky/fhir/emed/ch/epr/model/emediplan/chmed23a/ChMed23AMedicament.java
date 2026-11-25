@@ -20,9 +20,12 @@ import java.util.List;
 
 /**
  * Information about a medication as well as its dosage.
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class ChMed23AMedicament extends EMediplanMedicament<ChMed23AExtension> implements ChMed23AExtendable {
     protected final static String ID_FIELD_NAME = "id";
     protected final static String ID_TYPE_FIELD_NAME = "idType";

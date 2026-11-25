@@ -18,6 +18,11 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 public class ChMed23AEMediplanPdfGeneratorTest {
     private static final SoftwareProviderMetadata softwareProviderMetadata = new SoftwareProviderMetadata(
             "Husky",

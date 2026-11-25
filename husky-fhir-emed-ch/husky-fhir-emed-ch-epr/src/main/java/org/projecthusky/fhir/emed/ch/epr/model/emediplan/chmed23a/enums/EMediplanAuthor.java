@@ -6,7 +6,10 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanEnum;
 
 /**
  * Called {@code MedicationAuthor} in ChMed23A specifications.
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @Getter
 public enum EMediplanAuthor implements EMediplanEnum<Integer> {
     HEALTHCARE_PERSON(1),

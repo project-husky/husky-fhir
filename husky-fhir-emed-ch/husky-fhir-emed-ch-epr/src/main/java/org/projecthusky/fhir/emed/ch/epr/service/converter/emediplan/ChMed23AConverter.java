@@ -40,8 +40,12 @@ import java.util.stream.Stream;
 /**
  * Utility class to convert CH EMED EPR documents to an eMediplan object equivalent according to the
  * <a href="https://github.com/ig-emediplan/specification/tree/main/chmed23a">CHMED23A specifications</a>.
+ *
+ * @deprecated
+ * eMediplan has deprecated CHMED23A
  */
 @Slf4j
+@Deprecated
 public non-sealed class ChMed23AConverter implements EMediplanConverter {
     public ChMed23AConverter() {}
 

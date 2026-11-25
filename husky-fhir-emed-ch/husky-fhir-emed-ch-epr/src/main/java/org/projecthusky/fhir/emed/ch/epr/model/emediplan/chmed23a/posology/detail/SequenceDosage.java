@@ -13,6 +13,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 import java.util.List;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

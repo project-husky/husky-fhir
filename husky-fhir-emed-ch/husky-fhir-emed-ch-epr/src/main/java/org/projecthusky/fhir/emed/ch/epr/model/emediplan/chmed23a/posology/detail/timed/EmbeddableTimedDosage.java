@@ -11,7 +11,11 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.TimedDos
  *     <li>{@link DoseOnlyDosage}</li>
  *     <li>{@link PreciseTimesDosage}</li>
  * </ul>
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 public abstract class EmbeddableTimedDosage extends TimedDosage {
     protected EmbeddableTimedDosage() {
         super();

@@ -14,8 +14,13 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.ZoneId;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class RepetitionDuration extends Repetition implements DurationBoundRepeatable {

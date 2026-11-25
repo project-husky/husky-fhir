@@ -11,7 +11,12 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.DosageSe
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.TimeUnit;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @Data
+@Deprecated
 @AllArgsConstructor
 @NoArgsConstructor
 public abstract class SequenceElement implements EMediplanObject {

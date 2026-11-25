@@ -4,6 +4,11 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Getter;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanEnum;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 public enum DoseType implements EMediplanEnum<Integer> {
     SIMPLE(1),

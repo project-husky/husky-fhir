@@ -13,7 +13,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Describes a single application of a medicament.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Slf4j
 @Getter

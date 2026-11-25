@@ -9,7 +9,12 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanObject;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.PosologyType;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class PosologyDetail implements EMediplanObject {

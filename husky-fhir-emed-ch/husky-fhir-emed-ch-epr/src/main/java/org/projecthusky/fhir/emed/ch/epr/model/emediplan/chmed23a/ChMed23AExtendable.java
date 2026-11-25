@@ -12,7 +12,11 @@ import java.util.Objects;
  * object, so that the JSON field name can be customized in principle. This interface provides convenience methods for
  * extensions with a default implementation.
  * @see ChMed23AExtension
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 public interface ChMed23AExtendable extends EMediplanExtendable<ChMed23AExtension> {
     /**
      * Finds an extension within the embedded list of extensions whose schema and name match the provided ones. If the

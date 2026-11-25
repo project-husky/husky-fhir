@@ -15,7 +15,11 @@ import java.util.List;
 
 /**
  * Specifies precise times when a medication must be applied. This is named simply Times in ChMed23A.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

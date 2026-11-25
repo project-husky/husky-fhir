@@ -15,8 +15,11 @@ import java.util.List;
 /**
  * Extensions can be used to include additional information within an eMediplan that is not explicitly modelled by the
  * ChMed specification.
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @Data
+@Deprecated
 @AllArgsConstructor
 public class ChMed23AExtension implements ChMed23AExtendable, EMediplanObject {
     public static final String EXTENSIONS_FIELD_NAME = "exts";
