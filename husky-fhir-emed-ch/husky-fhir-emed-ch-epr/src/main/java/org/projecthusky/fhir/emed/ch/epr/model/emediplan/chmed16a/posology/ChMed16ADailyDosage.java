@@ -93,7 +93,7 @@ public class ChMed16ADailyDosage implements EMediplanObject {
             if (eveningDose == null) {
                 if (noonDose != null && noonDose == 0f) noonDose = null;
                 if (noonDose == null) {
-                    if (morningDose != null) morningDose = null;
+                    if (morningDose != null && morningDose == 0f) morningDose = null;
                 }
             }
         }
