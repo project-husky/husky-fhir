@@ -220,11 +220,13 @@ public non-sealed abstract class ChMed16ABaseConverter<M extends ChMed16AMedicam
                 // so it is not a number of repeats but more like a validityPeriod allowing unlimited repeats...
                 if ((!dispenseRequest.hasNumberOfRepeatsAllowed() || dispenseRequest.getNumberOfRepeatsAllowed() > 0) && dispenseRequest.hasValidityPeriod() && dispenseRequest.getValidityPeriod().hasEnd()) {
                     if (dispenseRequest.getValidityPeriod().hasStart()) {
-                        medicament.setRepetition(Period.between(
+                        final var months = Period.between(
                                 dispenseRequest.getValidityPeriod().getStartElement().getValueAsCalendar().toZonedDateTime().toLocalDate()
                                 , // add one day to end, because Java period constructors are end exclusive [S,E) unlike FHIR specs
                                 dispenseRequest.getValidityPeriod().getEndElement().getValueAsCalendar().toZonedDateTime().toLocalDate().plusDays(1)
-                        ).getMonths());
+                        ).toTotalMonths();
+                        if (months <= Integer.MAX_VALUE) medicament.setRepetition((int) months);
+                        else throw new InvalidEmedContentException("The validity period is too long to be represented in CHMED16A.");
                     }
                     else throw new InvalidEmedContentException("Dispense request has a validityPeriod with no specified start.");
                 }
