@@ -160,7 +160,7 @@ public class ChCorePatient extends Patient implements ChCoreContactPointCarrier 
 		final var system = UriType.fromOid(religion.getCodeSystemId());
 
 		final var coding = new Coding().setCode(religion.getCodeValue()).setSystemElement(system)
-				.setDisplay(religion.getDisplayName());
+				.setDisplay(religion.getDisplayName(null));
 
 		this.religion = new CodeableConcept(coding);
 		return this;

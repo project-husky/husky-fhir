@@ -697,9 +697,9 @@
 								<format>JSON</format>
 							</formats>
 							<nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
-							<suppressionFiles>
+							<!--<suppressionFiles>
 								<suppressionFile>owasp/owasp-suppress.xml</suppressionFile>
-							</suppressionFiles>
+							</suppressionFiles>-->
 						</configuration>
 						<executions>
 							<execution>

@@ -10,10 +10,6 @@
  */
 package org.projecthusky.fhir.core.ch.util;
 
-import org.projecthusky.common.utils.datatypes.Oids;
-
-import static org.projecthusky.common.enums.CodeSystems.SWISS_VEKA_NR;
-
 /**
  * Constants for the common FHIR systems.
  *
@@ -43,7 +39,7 @@ public class FhirSystem {
 
     public static final String ATC = "http://www.whocc.no/atc";
 
-    public static final String VEKA = Oids.PREFIX_OID + SWISS_VEKA_NR;
+    public static final String VEKA = "urn:oid:2.16.756.5.30.1.123.100.1.1.1";
 
     /**
      * This class is not instantiable.

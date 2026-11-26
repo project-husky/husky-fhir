@@ -4,16 +4,12 @@ package org.projecthusky.fhir.core.ch.enums;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
-import org.projecthusky.common.enums.CodeSystems;
-import org.projecthusky.common.enums.LanguageCode;
-import org.projecthusky.common.enums.ValueSetEnumInterface;
-
 import java.util.Objects;
 
-public enum ReligiousAffiliation implements ValueSetEnumInterface {
-    // TODO
-    ;
-
+public enum ReligiousAffiliation {
+	//TODO
+	;
+	
     /**
      * Machine interpretable and (inside this class) unique code.
      */
@@ -25,7 +21,7 @@ public enum ReligiousAffiliation implements ValueSetEnumInterface {
      */
     @NonNull
     private final String codeSystem;
-
+    
     /**
      * The display names per language. It's always stored in the given order: default display name (0), in English (1),
      * in German (2), in French (3) and in Italian (4).
@@ -49,33 +45,30 @@ public enum ReligiousAffiliation implements ValueSetEnumInterface {
      *
      * @return the code system identifier.
      */
-    @Override
     @NonNull
     public String getCodeSystemId() {
         return this.codeSystem;
     }
 
-    /**
-     * Gets the code system name.
-     *
-     * @return the code system name.
-     */
-    @Override
-    @NonNull
-    public String getCodeSystemName() {
-        final var codeSystem = CodeSystems.getEnum(this.codeSystem);
-        if (codeSystem != null) {
-            return codeSystem.getCodeSystemName();
-        }
-        return "";
-    }
+//    /**
+//     * Gets the code system name.
+//     *
+//     * @return the code system name.
+//     */
+//    @NonNull
+//    public String getCodeSystemName() {
+//        final var codeSystem = CodeSystems.getEnum(this.codeSystem);
+//        if (codeSystem != null) {
+//            return codeSystem.getCodeSystemName();
+//        }
+//        return "";
+//    }
 
     /**
      * Gets the code value as a string.
      *
      * @return the code value.
      */
-    @Override
     @NonNull
     public String getCodeValue() {
         return this.code;
@@ -87,27 +80,24 @@ public enum ReligiousAffiliation implements ValueSetEnumInterface {
      * @param languageCode The language code to get the display name for, {@code null} to get the default display name.
      * @return the display name in the desired language.
      */
-    @Override
     @NonNull
-    public String getDisplayName(@Nullable final LanguageCode languageCode) {
+    public String getDisplayName(@Nullable final String languageCode) {
         if (languageCode == null) {
             return this.displayNames[0];
         }
         return switch (languageCode) {
-            case ENGLISH -> this.displayNames[1];
-            case GERMAN -> this.displayNames[2];
-            case FRENCH -> this.displayNames[3];
-            case ITALIAN -> this.displayNames[4];
+            case "ENGLISH" -> this.displayNames[1];
+            case "GERMAN" -> this.displayNames[2];
+            case "FRENCH" -> this.displayNames[3];
+            case "ITALIAN" -> this.displayNames[4];
             default -> "TOTRANSLATE";
         };
     }
 
-    @Override
     public @NonNull String getValueSetId() {
         return null;
     }
 
-    @Override
     public @NonNull String getValueSetName() {
         return null;
     }
