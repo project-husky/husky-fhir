@@ -11,9 +11,13 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Combination of both {@link RepetitionNumber} and {@link RepetitionDuration}.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class RepetitionNumberAndDuration extends Repetition implements NumberBoundRepeatable, DurationBoundRepeatable{

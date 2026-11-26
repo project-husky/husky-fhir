@@ -5,6 +5,11 @@ import lombok.Getter;
 import org.projecthusky.fhir.emed.ch.epr.enums.TimingEventAmbu;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanEnum;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 public enum DaySegment implements EMediplanEnum<Integer> {
     MORNING(1),

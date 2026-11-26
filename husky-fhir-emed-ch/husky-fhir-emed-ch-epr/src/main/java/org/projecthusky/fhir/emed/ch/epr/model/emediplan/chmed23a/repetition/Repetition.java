@@ -9,8 +9,12 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.Repetiti
 
 /**
  * Indicates how often a prescription can be repeated or how long the prescription is valid.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class Repetition implements EMediplanObject {

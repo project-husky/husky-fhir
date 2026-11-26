@@ -13,8 +13,13 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanType;
 import org.projecthusky.fhir.emed.ch.epr.resource.ChEmedEprOrganization;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class ChMed23AHealthcareOrganization extends EMediplanHealthcareOrganization<ChMed23APostalAddress> {

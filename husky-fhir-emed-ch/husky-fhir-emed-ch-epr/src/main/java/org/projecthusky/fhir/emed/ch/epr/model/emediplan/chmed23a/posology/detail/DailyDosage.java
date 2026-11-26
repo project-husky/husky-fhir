@@ -16,7 +16,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 /**
  * Describes when (morning, moon, evening, night) and how much of a medication must be applied daily, in a structured
  * form.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Slf4j
 @Getter

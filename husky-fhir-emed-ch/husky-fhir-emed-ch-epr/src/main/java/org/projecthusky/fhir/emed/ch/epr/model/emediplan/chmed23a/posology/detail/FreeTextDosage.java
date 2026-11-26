@@ -10,7 +10,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Describes an unstructured dosage consisting of free text.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Getter
 @Setter

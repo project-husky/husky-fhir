@@ -5,6 +5,11 @@ import lombok.Getter;
 import lombok.Setter;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.DosageSequenceType;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

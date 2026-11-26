@@ -11,8 +11,12 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * This corresponds to the DosageObject definition in ChMed23A.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class EMediplanDose implements EMediplanObject {

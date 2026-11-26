@@ -9,8 +9,13 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanHealthcarePerson;
 import org.projecthusky.fhir.emed.ch.epr.resource.ChEmedEprPractitioner;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class ChMed23AHealthcarePerson extends EMediplanHealthcarePerson {

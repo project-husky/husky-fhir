@@ -9,6 +9,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 import java.time.Duration;
 import java.time.Instant;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 public interface DurationBoundRepeatable extends EMediplanObject {
     int getDuration();
     TimeUnit getDurationUnit();

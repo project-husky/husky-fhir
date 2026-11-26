@@ -15,8 +15,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class ChMed23APatientMedicalData extends EMediplanPatientMedicalData<ChMed23AExtension> implements ChMed23AExtendable {
     protected static final String PREMATURE_BABY_FIELD_NAME = "prem";
     protected static final String TIME_OF_GESTATION_FIELD_NAME = "toG";

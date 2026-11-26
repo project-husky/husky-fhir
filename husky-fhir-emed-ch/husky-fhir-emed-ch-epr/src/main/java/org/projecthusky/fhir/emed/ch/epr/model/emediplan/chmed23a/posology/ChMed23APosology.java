@@ -19,9 +19,12 @@ import static org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.ChMed23
 
 /**
  * Describes when and what amount of medication must be taken.
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class ChMed23APosology extends EMediplanPosology {
     protected static final String DETAIL_FIELD_NAME = "po";
     protected static final String UNIT_FIELD_NAME = "unit";

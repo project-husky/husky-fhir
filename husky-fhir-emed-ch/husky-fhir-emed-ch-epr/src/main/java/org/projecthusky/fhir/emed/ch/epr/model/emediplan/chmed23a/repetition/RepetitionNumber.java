@@ -7,8 +7,13 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.RepetitionType;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class RepetitionNumber extends Repetition implements NumberBoundRepeatable {
     protected static final String VALUE_FIELD_NAME = "v";
 
