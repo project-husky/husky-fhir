@@ -13,7 +13,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Specifies the application of a medication with a minimal interval between two applications.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

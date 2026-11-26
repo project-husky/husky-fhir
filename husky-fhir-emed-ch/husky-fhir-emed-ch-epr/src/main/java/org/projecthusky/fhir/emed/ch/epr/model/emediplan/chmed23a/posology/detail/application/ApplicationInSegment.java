@@ -11,9 +11,13 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Specifies a day segment (morning, noon, evening or night) when a medication must be applied.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 public class ApplicationInSegment extends Application {
     protected final static String SEGMENT_FIELD_NAME = "s";

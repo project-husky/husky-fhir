@@ -22,8 +22,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 @Slf4j

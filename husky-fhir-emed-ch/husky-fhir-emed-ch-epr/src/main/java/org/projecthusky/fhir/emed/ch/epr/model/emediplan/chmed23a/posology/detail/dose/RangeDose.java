@@ -10,7 +10,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * A dose specifying a minimum and a maximum amount of medication.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class RangeDose extends EMediplanDose {

@@ -6,6 +6,11 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 import org.projecthusky.common.enums.AdministrativeGender;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanGender;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 public enum ChMed23AGender implements EMediplanGender {
     MALE(1),

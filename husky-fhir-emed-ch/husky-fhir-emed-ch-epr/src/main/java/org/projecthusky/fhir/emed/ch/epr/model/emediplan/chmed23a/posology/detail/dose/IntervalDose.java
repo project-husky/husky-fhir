@@ -13,9 +13,13 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 /**
  * This is what ChMed23A calls DosageFromTo. It specifies how a dose changes during time, e.g. for infusions, starting
  * at one value and ending at a different value during the specified amount of time.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @AllArgsConstructor
 public class IntervalDose extends EMediplanDose {
     protected static final String INITIAL_AMOUNT_FIELD_NAME = "aFrom";

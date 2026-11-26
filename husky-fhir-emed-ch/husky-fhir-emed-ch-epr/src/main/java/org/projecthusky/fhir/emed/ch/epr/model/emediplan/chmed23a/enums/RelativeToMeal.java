@@ -7,6 +7,11 @@ import org.hl7.fhir.r4.model.CodeableConcept;
 import org.hl7.fhir.r4.model.Coding;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanEnum;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 public enum RelativeToMeal implements EMediplanEnum<Integer> {
     BEFORE(1),

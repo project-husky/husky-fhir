@@ -5,6 +5,11 @@ import org.hl7.fhir.r4.model.OperationOutcome;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanObject;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 public interface NumberBoundRepeatable extends EMediplanObject {
     int getValue();
 

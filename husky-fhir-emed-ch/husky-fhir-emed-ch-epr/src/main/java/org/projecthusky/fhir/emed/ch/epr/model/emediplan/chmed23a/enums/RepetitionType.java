@@ -4,6 +4,11 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Getter;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanEnum;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @Getter
 public enum RepetitionType implements EMediplanEnum<Integer> {
     NUMBER(1),

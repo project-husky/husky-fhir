@@ -11,9 +11,13 @@ import java.time.LocalTime;
 
 /**
  * Specifies a precise moment in time for a medication to be applied.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class ApplicationAtTime extends Application {
     protected static final String APPLICATION_TIME_FIELD_NAME = "dt";
 

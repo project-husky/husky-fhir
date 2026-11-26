@@ -27,9 +27,13 @@ import java.util.List;
  * <p>
  * Based on the CHMed23A specs doc version 2.1 and the CHMed23A posology specs doc version 2.1.
  * </p>
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class ChMed23AEMediplan extends EMediplan<ChMed23AExtension, ChMed23AGender, ChMed23AMedicament, ChMed23APatientId>
         implements ChMed23AExtendable, EMediplanHealthcareProCarrier<ChMed23AHealthcarePerson, ChMed23AHealthcareOrganization> {
     public static final String EMEDIPLAN_VERSION = "CHMED23A";

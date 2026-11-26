@@ -15,8 +15,10 @@ public enum NarrativeFormat {
     CHMED16A,
     /**
      * Spcecifically CHMED23A paper layout.
+     * @deprecated
+     * eMediplan deprecated CHMED23A
      */
-    CHMED23A,
+    @Deprecated CHMED23A,
     /**
      * ePrescription (eRezept) paper layout.
      */

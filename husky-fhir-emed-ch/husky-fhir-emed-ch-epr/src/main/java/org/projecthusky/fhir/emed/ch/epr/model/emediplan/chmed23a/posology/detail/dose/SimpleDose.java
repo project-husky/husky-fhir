@@ -8,8 +8,13 @@ import org.hl7.fhir.r4.model.OperationOutcome;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.DoseType;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 public class SimpleDose extends EMediplanDose {
     protected static final String AMOUNT_FIELD_NAME = "a";
 

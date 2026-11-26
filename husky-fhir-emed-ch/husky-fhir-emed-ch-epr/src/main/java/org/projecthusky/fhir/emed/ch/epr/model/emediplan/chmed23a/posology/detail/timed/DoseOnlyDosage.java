@@ -12,7 +12,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Specifies a dosage without specifying a precise moment for the intake.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Getter
 @Setter

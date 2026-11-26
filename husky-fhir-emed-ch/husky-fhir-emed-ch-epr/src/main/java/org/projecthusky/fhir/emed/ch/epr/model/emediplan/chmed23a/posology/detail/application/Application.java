@@ -12,8 +12,12 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 /**
  * Specifies a dose that must be applied at certain times, either at a precise moment or in a day's segment (i.e.
  * morning, noon, evening or night).
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @Data
+@Deprecated
 @AllArgsConstructor
 @NoArgsConstructor
 public abstract class Application implements EMediplanObject {

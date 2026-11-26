@@ -13,9 +13,12 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanPostalAddress;
  * A postal address. This class is made to be embedded within other classes like {@link ChMed23APatient} and
  * {@link ChMed23AHealthcareOrganization} that should use it as a {@link com.fasterxml.jackson.annotation.JsonUnwrapped}
  * property so that it is flattened on inclusion.
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class ChMed23APostalAddress extends EMediplanPostalAddress {

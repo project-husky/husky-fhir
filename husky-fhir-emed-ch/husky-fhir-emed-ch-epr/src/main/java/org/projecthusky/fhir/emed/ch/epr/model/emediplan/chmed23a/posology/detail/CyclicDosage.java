@@ -13,7 +13,11 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
 
 /**
  * Describes the application of a medication at constant intervals.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

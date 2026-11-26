@@ -11,6 +11,11 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.posology.detai
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.posology.detail.SequenceDosage;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Getter
 @Setter

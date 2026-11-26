@@ -14,7 +14,12 @@ import org.projecthusky.fhir.emed.ch.epr.model.emediplan.EMediplanIdentifier;
 import org.projecthusky.fhir.emed.ch.epr.model.emediplan.chmed23a.enums.PatientIdType;
 import org.projecthusky.fhir.validation.model.ValidationResult;
 
+/**
+ * @deprecated
+ * eMediplan deprecated CHMED23A
+ */
 @Data
+@Deprecated
 @NoArgsConstructor
 @AllArgsConstructor
 public class ChMed23APatientId implements EMediplanIdentifier {

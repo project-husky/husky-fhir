@@ -12,8 +12,12 @@ import org.projecthusky.fhir.validation.model.ValidationResult;
  * Specifies the moment and amount of a medication application. All TimedDosage objects must specify an amount to be
  * applied. It is not mandatory to specify the moment of application, but it is possibly to set them either precisely
  * or vaguely.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
 @Data
+@Deprecated
 @NoArgsConstructor
 public abstract class TimedDosage implements EMediplanObject {
     protected static final String TIMED_DOSAGE_TYPE_FIELD_NAME = "t";

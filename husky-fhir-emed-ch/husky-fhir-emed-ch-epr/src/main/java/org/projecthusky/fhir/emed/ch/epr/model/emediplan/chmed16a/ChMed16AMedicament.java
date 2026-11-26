@@ -108,10 +108,12 @@ public class ChMed16AMedicament extends EMediplanMedicament<ChMed16AExtension> i
         posology =  new ArrayList<>();
     }
 
+    @JsonIgnore
     public String getRepetitionFieldName() {
         return REPETITION_FIELD_NAME;
     }
 
+    @JsonIgnore
     public String getNumberOfPackagesFieldName() {
         return NUMBER_OF_PACKAGES_FIELD_NAME;
     }

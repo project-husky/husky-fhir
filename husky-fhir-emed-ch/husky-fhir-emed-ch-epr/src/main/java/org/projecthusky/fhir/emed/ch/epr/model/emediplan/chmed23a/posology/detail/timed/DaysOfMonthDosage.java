@@ -14,7 +14,11 @@ import java.util.Set;
 
 /**
  * Specifies on which days of the month a medication must be applied.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true)

@@ -17,7 +17,11 @@ import java.util.List;
 /**
  * Specifies the day segment (morning, noon, evening, night) when a medication should be applied. This is called
  * DaySegments by ChMed23A.
+ *
+ * @deprecated
+ * eMediplan deprecated CHMED23A
  */
+@Deprecated
 @EqualsAndHashCode(callSuper = true)
 @Getter
 @Setter
