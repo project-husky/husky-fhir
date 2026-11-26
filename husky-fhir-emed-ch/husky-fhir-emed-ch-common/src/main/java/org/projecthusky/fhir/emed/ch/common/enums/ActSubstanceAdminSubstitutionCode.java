@@ -16,10 +16,7 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
 import org.hl7.fhir.r4.model.CodeableConcept;
 import org.hl7.fhir.r4.model.Coding;
-import org.projecthusky.common.enums.CodeSystems;
-import org.projecthusky.common.enums.LanguageCode;
-import org.projecthusky.common.enums.ValueSetEnumInterface;
-import org.projecthusky.common.utils.datatypes.Oids;
+
 import org.projecthusky.fhir.structures.utils.FhirValueSetEnumInterface;
 
 /**
@@ -36,7 +33,7 @@ import org.projecthusky.fhir.structures.utils.FhirValueSetEnumInterface;
  * Status: DRAFT
  */
 @Generated(value = "org.projecthusky.codegenerator.ch.valuesets.UpdateValueSets", date = "2024-07-18")
-public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, FhirValueSetEnumInterface {
+public enum ActSubstanceAdminSubstitutionCode implements FhirValueSetEnumInterface {
 
     /**
      * EN: brand composition.<br>
@@ -268,7 +265,6 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      *
      * @return the code system identifier.
      */
-    @Override
     @NonNull
     public String getCodeSystemId() {
         return this.codeSystem;
@@ -279,7 +275,6 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      *
      * @return the code system name.
      */
-    @Override
     @NonNull
     public String getCodeSystemName() {
         final var codeSystem = CodeSystems.getEnum(this.codeSystem);
@@ -294,7 +289,6 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      *
      * @return the code value.
      */
-    @Override
     @NonNull
     public String getCodeValue() {
         return this.code;
@@ -308,7 +302,7 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      */
     @Override
     @NonNull
-    public String getDisplayName(@Nullable final LanguageCode languageCode) {
+    public String getDisplayName(@Nullable final String languageCode) {
         if (languageCode == null) {
             return this.displayNames[0];
         }
@@ -385,7 +379,7 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      */
     @Override
     @NonNull
-    public Coding getCoding(final LanguageCode languageCode) {
+    public Coding getCoding(final String languageCode) {
         return new Coding(this.getFhirSystem(),
                           this.getCodeValue(),
                           this.getDisplayName(languageCode));
@@ -396,7 +390,7 @@ public enum ActSubstanceAdminSubstitutionCode implements ValueSetEnumInterface, 
      */
     @Override
     @NonNull
-    public CodeableConcept getCodeableConcept(final LanguageCode languageCode) {
+    public CodeableConcept getCodeableConcept(final String languageCode) {
         return new CodeableConcept().setText(this.getDisplayName(languageCode)).addCoding(this.getCoding(languageCode));
     }
 
