@@ -236,7 +236,7 @@ public non-sealed abstract class ChMed16ABaseConverter<M extends ChMed16AMedicam
                     final var quantity = dispenseRequest.getQuantity();
                     final var quantityValue = quantity.getValue().doubleValue();
                     if (quantityValue != DEFAULT_NUMBER_OF_PACKAGES
-                            && (!dispenseRequest.getQuantity().hasUnit() || PACKAGE == RegularUnitCodeAmbu.getEnum(dispenseRequest.getQuantity().getUnit()))) {
+                            && (!dispenseRequest.getQuantity().hasUnit() || PACKAGE == RegularUnitCodeAmbu.getEnum(dispenseRequest.getQuantity().getCode()))) {
                         medicament.setNumberOfPackages(quantityValue);
                     }
                 }
